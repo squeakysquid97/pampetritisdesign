@@ -1,0 +1,46 @@
+:root {
+  font-size: 62.5%; /* 1 rem = 10px, 62.5% of 16px */
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: #06273a;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  width: 25%;
+}
+.logo {
+  font-family: "Rozha One", sarif;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.contact-button {
+  color: black;
+  background-color: #ffeee0;
+}
+
+.navlist {
+  display: flex;
+  background-color: #fffef8;
+}
+
+.navlist-item {
+  font-size: small;
+  background-color: #fffef8;
+  color: #06273a;
+  padding: 1rem 3rem;
+  flex-direction: row;
+  list-style-type: none;
+}
