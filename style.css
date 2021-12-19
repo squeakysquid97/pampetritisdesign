@@ -10,22 +10,38 @@
   background-color: #06273a;
 }
 
-.header {
-  /* display: flex;
-  flex-direction: row; */
+h1 {
+  font-family: "Rhoza One", serif;
 }
 
 .logo-contact__container {
   display: flex;
+  padding: 2rem;
 }
 
 .contact {
   width: 25%;
-  margin: 4.2rem -2rem 0 70%;
+  margin: 4.2rem -2rem 0 25%;
 }
 
 .logo {
-  font-family: "Rozha One", sarif;
+  font-family: "Rozha One", serif;
+}
+
+.logo-section {
+  width: 75%;
+  padding: 2rem;
+}
+
+.logo-blurb {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.logo-img {
+  margin: 1rem;
+  width: 119px;
+  height: 120px;
 }
 
 .navbar {
@@ -60,8 +76,12 @@
 
 .contact-items {
   display: flex;
-  float: right;
 }
+
+.main {
+  padding: 5rem 2rem;
+}
+
 .main-blurb {
   display: flex;
   column-width: 50%;
@@ -87,7 +107,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 50%;
-  padding: 2rem;
+  padding: 0.5rem 2rem 0 2rem;
   text-align: center;
 }
 
@@ -107,5 +127,17 @@
 .main-blurb__text p {
   line-height: 3rem;
   font-size: medium;
-  padding: 6rem 4rem;
+  padding: 1rem 8rem;
+}
+
+.project-divider {
+  width: 100%;
+  height: 35rem;
+  background-color: #fffef8;
+}
+
+.project-divider h1 {
+  font-size: x-large;
+  text-align: center;
+  margin: auto;
 }
