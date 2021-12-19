@@ -43,4 +43,23 @@
   padding: 1rem 3rem;
   flex-direction: row;
   list-style-type: none;
+} 
+.main-blurb {
+  display:flex; 
+  flex-direction: column;
 }
+
+.main-photo {
+  /* The image used */
+  background-image: url("parallax_1.jpg");
+
+  /* Set a specific height */
+  height: 539.5px; 
+  width: 1040px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
