@@ -11,19 +11,13 @@
 }
 
 .header {
-  /* display: flex;
-  flex-direction: row; */
-}
-
-.logo-contact__container {
   display: flex;
+  flex-direction: row;
 }
 
 .contact {
   width: 25%;
-  margin: 4.2rem -2rem 0 70%;
 }
-
 .logo {
   font-family: "Rozha One", sarif;
 }
@@ -35,13 +29,6 @@
 .contact-button {
   color: black;
   background-color: #ffeee0;
-  width: 125px;
-  height: 45px;
-  font-weight: 100;
-}
-
-.contact-button:hover {
-  cursor: pointer;
 }
 
 .navlist {
@@ -57,30 +44,24 @@
   flex-direction: row;
   list-style-type: none;
 }
-
-.contact-items {
-  display: flex;
-  float: right;
-}
 .main-blurb {
   display: flex;
   column-width: 50%;
 }
 
 .main-blurb__photo {
-  /* The image used */
+  /* The image used */ 
   background-image: url("parallax_1.jpg");
-
+  
   /* Set a specific height */
   height: 1040px;
-  width: 800px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed; 
+  width: 800px; 
+  
+  background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover; 
-}
+} 
 
 .main-blurb__text {
   display: flex;
