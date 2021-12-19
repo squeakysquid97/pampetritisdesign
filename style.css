@@ -65,12 +65,29 @@
 }
 
 .main-blurb__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 50%;
   padding: 2rem;
   text-align: center;
-  font-size: large;
 }
 
 .main-blurb__text {
   padding: 2rem;
+}
+
+.main-blurb__text h1 {
+  line-height: 12rem;
+  font-size: 8rem;
+}
+
+.main-blurb__text h3 {
+  font-size: large;
+}
+
+.main-blurb__text p {
+  line-height: 3rem;
+  font-size: medium;
+  padding: 6rem 4rem;
 }
