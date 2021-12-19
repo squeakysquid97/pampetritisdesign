@@ -96,10 +96,10 @@ h1 {
   width: 800px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: local;
+  background-attachment: fixed; 
   background-position: right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
 }
 
 .main-blurb__text {
