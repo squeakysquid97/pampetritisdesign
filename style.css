@@ -6,12 +6,38 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  background-color: #06273a;
+  /* color: white; */
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
 }
 
 h1 {
   font-family: "Rhoza One", serif;
+  font-size: 7.2rem;
+}
+
+body {
+  background-color: #06273a;
+  color: white;
+}
+
+.background-holder__white {
+  background-color: #fffef8;
+  z-index: -1;
+}
+
+.background-holder__green {
+  background-color: #6f8937;
+  z-index: -1;
+}
+
+.background-holder__beige {
+  background-color: #ffeee0;
+  z-index: -1;
 }
 
 .logo-contact__container {
@@ -25,7 +51,7 @@ h1 {
 }
 
 .logo {
-  font-family: "Rozha One", serif;
+  font-size: 2.2rem;
 }
 
 .logo-section {
@@ -34,7 +60,7 @@ h1 {
 }
 
 .logo-blurb {
-  font-size: 12px;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
@@ -66,7 +92,6 @@ h1 {
 }
 
 .navlist-item {
-  font-size: small;
   background-color: #fffef8;
   color: #06273a;
   padding: 1rem 3rem;
@@ -79,12 +104,13 @@ h1 {
 }
 
 .main {
-  padding: 5rem 2rem;
+  /* padding: 5rem 2rem; */
 }
 
 .main-blurb {
   display: flex;
   column-width: 50%;
+  padding: 5rem 2rem;
 }
 
 .main-blurb__photo {
@@ -96,10 +122,10 @@ h1 {
   width: 800px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .main-blurb__text {
@@ -112,24 +138,81 @@ h1 {
 }
 
 .main-blurb__text {
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .main-blurb__text h1 {
-  line-height: 12rem;
-  font-size: 8rem;
+  line-height: 9rem;
+  padding: 3rem;
 }
 
 .main-blurb__text h3 {
-  font-size: large;
+  padding: 3rem;
+  font-size: 2.8rem;
 }
 
 .main-blurb__text p {
   line-height: 3rem;
-  font-size: medium;
+
   padding: 1rem 8rem;
 }
 
+.design-header {
+  background-color: #fffef8;
+  height: 30rem;
+}
+
+.design-header h1 {
+  color: #06273a;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.design-column {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.design-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.design-blurb {
+  background-color: #06273a;
+  padding: 5rem;
+  width: 50%;
+  margin: 1rem;
+}
+
+.design-blurb h1 {
+}
+
+.design-blurb p {
+  line-height: 2.67rem;
+}
+
+.design-img {
+  width: 50%;
+  overflow: hidden;
+  margin: 1rem;
+}
+.design-img img {
+  height: 60rem;
+}
+
+.design-link {
+  background-color: #ffeee0;
+  color: #06273a;
+  width: 25rem;
+  height: 6rem;
+}
+.projects {
+  background: #fffef8;
+}
 .project-divider {
   width: 100%;
   height: 35rem;
@@ -137,7 +220,107 @@ h1 {
 }
 
 .project-divider h1 {
-  font-size: x-large;
   text-align: center;
   margin: auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-blurb {
+  color: #06273a !important;
+  width: 50%;
+  line-height: 5rem;
+  padding: 10rem 0 10rem 10rem;
+}
+
+.form-blurb h1 {
+  padding: 2rem 0;
+}
+.form-content {
+  color: #06273a;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  padding: 10rem 0 10rem 10rem;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  columns: 2;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.form-column__half {
+  width: 50%;
+}
+
+.map-container {
+  bottom: 2rem;
+}
+
+.map {
+  display: block;
+  width: 94rem;
+  height: 47rem;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  border: 0;
+}
+
+.footer {
+  text-align: center;
+}
+
+.subscribe-header {
+  font-size: 2.2rem;
+}
+
+.subscribe-form {
+  padding-top: 5rem;
+}
+
+.subscribe-form__input {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: 0 auto;
+  padding: 1rem 0 6rem 0;
+}
+
+.subscribe-form__input input {
+  height: 3.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #06273a;
+  border: 1px solid white;
+}
+
+.subscribe-form__input ::-webkit-input-placeholder {
+  color: white;
+  padding-left: 1rem;
+}
+
+.subscribe-form__input button {
+  height: 3.5rem;
+}
+
+.subscribe-form__input button:hover {
+  cursor: pointer;
+}
+
+.address p,
+.copyright p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 1rem 0;
+}
+
+.facebook-link h1 {
+  font-size: 2rem;
+  padding: 1.5rem 0 3rem 0;
+  font-weight: bolder;
 }
