@@ -47,7 +47,7 @@ body {
 
 .contact {
   width: 25%;
-  margin: 4.2rem -2rem 0 25%;
+  margin: 5.5rem -2rem 0 25%;
 }
 
 .logo {
@@ -56,7 +56,7 @@ body {
 
 .logo-section {
   width: 75%;
-  padding: 2rem;
+  padding: 5.5rem 2rem;
 }
 
 .logo-blurb {
@@ -65,20 +65,24 @@ body {
 }
 
 .logo-img {
-  margin: 1rem;
+  margin: 2rem 0 0 3rem;
   width: 119px;
   height: 120px;
 }
 
+/* Navbar */
+
 .navbar {
   width: 100%;
+  flex-direction: column;
+  background-color: #fffef8;
+  columns: 2;
 }
 
 .contact-button {
   color: black;
-  background-color: #ffeee0;
-  width: 125px;
-  height: 45px;
+  width: 12.5rem;
+  height: 4.5rem;
   font-weight: 100;
 }
 
@@ -88,21 +92,23 @@ body {
 
 .navlist {
   display: flex;
-  background-color: #fffef8;
+  flex-direction: row;
+  height: 5rem;
 }
 
 .navlist-item {
-  background-color: #fffef8;
   color: #06273a;
-  padding: 1rem 3rem;
-  flex-direction: row;
+  padding: 1.8rem 3rem;
   list-style-type: none;
+  font-size: 1.2rem;
 }
 
 .contact-items {
+  padding-left: 35%;
   display: flex;
 }
 
+/* Main Content */
 .main {
   /* padding: 5rem 2rem; */
 }
@@ -110,7 +116,8 @@ body {
 .main-blurb {
   display: flex;
   column-width: 50%;
-  padding: 5rem 2rem;
+  padding: 9rem 10rem 0;
+  height: 90vh;
 }
 
 .main-blurb__photo {
@@ -118,8 +125,8 @@ body {
   background-image: url("parallax_1.jpg");
 
   /* Set a specific height */
-  height: 1040px;
-  width: 800px;
+  height: 90%;
+  width: 50%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -133,8 +140,9 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   width: 50%;
-  padding: 0.5rem 2rem 0 2rem;
+  padding: 4rem 2rem 0 2rem;
   text-align: center;
+  color: #ffeee0;
 }
 
 .main-blurb__text {
@@ -142,7 +150,9 @@ body {
 }
 
 .main-blurb__text h1 {
-  line-height: 9rem;
+  line-height: 10rem;
+  font-weight: light;
+  font-size: 84px;
   padding: 3rem;
 }
 
@@ -153,8 +163,8 @@ body {
 
 .main-blurb__text p {
   line-height: 3rem;
-
-  padding: 1rem 8rem;
+  width: 100%;
+  padding: 1rem 4rem;
 }
 
 .design-header {
@@ -171,9 +181,7 @@ body {
 .design-column {
   display: flex;
   flex-direction: column;
-  width: auto;
-  margin: 0 auto;
-  padding: 0 2rem;
+  margin-left: 7%;
 }
 
 .design-row {
@@ -183,20 +191,25 @@ body {
 
 .design-blurb {
   background-color: #06273a;
-  padding: 5rem;
-  width: 50%;
+  padding: 5rem 5rem 0 5rem;
+  width: 45%;
   margin: 1rem;
 }
 
-.design-blurb h1 {
+.design-blurb--header {
+  font-size: 48px;
+  padding-bottom: 2.5rem;
+  line-height: 6.5rem;
 }
 
 .design-blurb p {
-  line-height: 2.67rem;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  padding-bottom: 5.5rem;
 }
 
 .design-img {
-  width: 50%;
+  width: 45%;
   overflow: hidden;
   margin: 1rem;
 }
@@ -207,7 +220,7 @@ body {
 .design-link {
   background-color: #ffeee0;
   color: #06273a;
-  width: 25rem;
+  width: 29rem;
   height: 6rem;
 }
 .projects {
